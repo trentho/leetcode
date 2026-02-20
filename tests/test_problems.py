@@ -28,6 +28,19 @@ class TestProblems(unittest.TestCase):
         output = self._run_problem("max_depth")
         self.assertEqual(output, "3")
 
+    def test_longest_common_prefix(self) -> None:
+        output = self._run_problem("longest_common_prefix")
+        self.assertEqual(
+            output,
+            "\n".join(
+                [
+                    "input=['bat', 'bag', 'bank', 'band'] expected='ba' got='ba'",
+                    "input=['dance', 'dag', 'danger', 'damage'] expected='da' got='da'",
+                    "input=['neet', 'feet'] expected='' got=''",
+                ]
+            ),
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
