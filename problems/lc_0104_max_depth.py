@@ -6,8 +6,8 @@ import sys
 if __package__ is None or __package__ == "":
     sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 
-from lc.nodes import TreeNode
-from lc.tree import build_tree
+from leetcode_classes.nodes import TreeNode
+from leetcode_classes.tree import build_tree
 
 
 class Solution:

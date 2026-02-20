@@ -11,12 +11,13 @@ Reusable local framework for solving and debugging LeetCode problems in VS Code.
 - Core DS: `UnionFind`, `Trie`, `MinHeap`, `MaxHeap`, `FenwickTree`, `SegmentTreeSum`
 - Interview utility DS: `Stack`, `Queue`, `MinStack`, monotonic queues
 - Flat `problems/` module layout with dynamic runner in `main.py`
+- Ready-to-copy algorithm templates in `templates/`
 
 ## Project Structure
 
 ```text
 leetcode/
-├── lc/
+├── leetcode_classes/
 │   ├── __init__.py
 │   ├── nodes.py
 │   ├── linked_list.py
@@ -35,6 +36,12 @@ leetcode/
 │   ├── lc_0206_reverse_linked_list.py
 │   └── lc_0104_max_depth.py
 ├── tests/
+├── templates/
+│   ├── sliding_window.py
+│   ├── bfs.py
+│   ├── dfs.py
+│   ├── two_pointers.py
+│   └── binary_search.py
 ├── main.py
 └── requirements.txt
 ```
@@ -50,6 +57,16 @@ python3 main.py lc_0206_reverse_linked_list
 
 Each problem module should expose a `run()` function.
 
+## Templates
+
+Use the boilerplates in `templates/` as quick starters:
+
+- `templates/sliding_window.py`
+- `templates/bfs.py`
+- `templates/dfs.py`
+- `templates/two_pointers.py`
+- `templates/binary_search.py`
+
 ## VS Code Debugging
 
 1. Open this repo in VS Code.
@@ -63,7 +80,7 @@ If you want a single file that runs both locally and on LeetCode:
 
 ```python
 try:
-    from lc.nodes import TreeNode
+    from leetcode_classes.nodes import TreeNode
 except ImportError:
     pass
 ```

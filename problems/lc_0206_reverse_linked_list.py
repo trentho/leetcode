@@ -6,8 +6,8 @@ import sys
 if __package__ is None or __package__ == "":
     sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 
-from lc.linked_list import build_linked_list, print_linked_list
-from lc.nodes import ListNode
+from leetcode_classes.linked_list import build_linked_list, print_linked_list
+from leetcode_classes.nodes import ListNode
 
 
 class Solution:
