@@ -4,7 +4,7 @@ import importlib
 import sys
 
 
-USAGE = "Usage: python main.py <problem_module>  (e.g. lc_0104_max_depth)"
+USAGE = "Usage: python main.py <problem_module>  (e.g. max_depth)"
 
 
 def main() -> None:

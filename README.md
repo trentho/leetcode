@@ -32,9 +32,9 @@ leetcode/
 │   └── union_find.py
 ├── problems/
 │   ├── __init__.py
-│   ├── lc_0001_two_sum.py
-│   ├── lc_0206_reverse_linked_list.py
-│   └── lc_0104_max_depth.py
+│   ├── two_sum.py
+│   ├── reverse_linked_list.py
+│   └── max_depth.py
 ├── tests/
 ├── templates/
 │   ├── sliding_window.py
@@ -51,11 +51,30 @@ leetcode/
 Run from the project root:
 
 ```bash
-python3 main.py lc_0104_max_depth
-python3 main.py lc_0206_reverse_linked_list
+python3 main.py max_depth
+python3 main.py reverse_linked_list
 ```
 
 Each problem module should expose a `run()` function.
+
+## Tests
+
+Use the `tests/` folder for regression checks while you keep solving new problems.
+
+- `tests/test_leetcode_classes.py` tests reusable data structures/helpers.
+- `tests/test_problems.py` tests `run()` output for problem modules.
+
+Run all tests:
+
+```bash
+python3 -m unittest discover -s tests -p "test_*.py"
+```
+
+Run one file:
+
+```bash
+python3 -m unittest tests/test_problems.py
+```
 
 ## Templates
 
@@ -72,7 +91,7 @@ Use the boilerplates in `templates/` as quick starters:
 1. Open this repo in VS Code.
 2. Set breakpoints in a problem file or helper module.
 3. Start debugging `main.py` with an argument such as:
-   - `lc_0104_max_depth`
+   - `max_depth`
 
 ## LeetCode Compatibility Tip
 

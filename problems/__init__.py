@@ -1,1 +1,1 @@
-# Problem modules live under category folders, e.g. problems.trees.lc_0104_max_depth
+# Problem modules live here, e.g. problems.max_depth
